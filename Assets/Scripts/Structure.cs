@@ -13,9 +13,11 @@ public class Structure : MonoBehaviour {
         for(int i = 0; i < count; i++) {
             Transform c = transform.GetChild(i);
             for(int j = 0; j < count; j++) {
+                
                 if(i == j) {
                     continue;
                 }
+                
                 
                 Transform other = transform.GetChild(j);
 
