@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657934, g: 0.4964134, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657993, g: 0.49641424, b: 0.57481825, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -128,6 +128,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 1003455003}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &10172817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 119801807}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &10172819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10172817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &11795126 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7788095574843594435, guid: b35087f7d8ebbcc4aaaf496ae7503080, type: 3}
@@ -143,6 +161,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 2058207856}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &32102825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 331739388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &32102827
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32102825}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &32585199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -153,6 +189,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -216,6 +256,7 @@ GameObject:
   - component: {fileID: 36341390}
   - component: {fileID: 36341392}
   - component: {fileID: 36341391}
+  - component: {fileID: 36341393}
   m_Layer: 0
   m_Name: SlingArea
   m_TagString: Untagged
@@ -258,6 +299,102 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36341389}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &36341393
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36341389}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a764377339b869e459f5e53fb9258f73, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &47425889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -268,6 +405,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -370,8 +511,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock2
       objectReference: {fileID: 0}
+    - target: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+--- !u!1 &53560838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 727692256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &53560840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53560838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &61416933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1685396459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &61416935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61416933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &64241094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 972565983}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &64241096
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64241094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &76539821 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -436,6 +635,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -532,6 +735,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &98942917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1010617346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &98942919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98942917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &99651825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -759,6 +980,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &110894008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1114117995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &110894010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110894008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &113928907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 593287274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &113928909
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113928907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &118743752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -813,6 +1070,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -870,6 +1131,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -973,11 +1238,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126083318}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &129057425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 580317898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &129057427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129057425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &135979999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 409980400}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &139370229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 942888969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &139370231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139370229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &140161351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1032,6 +1333,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -1097,6 +1402,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 1637194611}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &145102659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1103773459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &145102661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145102659}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &151775949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1203312844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &151775951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151775949}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &152433912 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1169757704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &152433914
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152433912}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &153825225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1835477617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &153825227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153825225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &157542475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -1162,8 +1539,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+--- !u!1 &167232461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1687271199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &167232463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167232461}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &168329018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,6 +1658,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168329018}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &172275579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 832979779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &172275581
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172275579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &178236085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -1285,7 +1702,7 @@ GameObject:
   - component: {fileID: 199518974}
   m_Layer: 0
   m_Name: Fort
-  m_TagString: Untagged
+  m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1596,6 +2013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &225437151
@@ -1678,6 +2099,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -1820,6 +2245,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244998572}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &250107523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 238816626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &250107525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250107523}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &258381044 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
@@ -1879,6 +2322,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -1961,6 +2408,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 1687271199}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &272297109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+  m_PrefabInstance: {fileID: 165468212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &272297111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272297109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &274926920 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -2102,6 +2567,24 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 0
   m_Loop: 0
+--- !u!1 &324738400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+  m_PrefabInstance: {fileID: 2085554482}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &324738402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324738400}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &331739388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2156,6 +2639,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -2221,6 +2708,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1225541149}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &335811075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 413863251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &335811077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335811075}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &339819542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2332,6 +2837,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -2536,6 +3045,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82f54e544a7fa1429944c6a878de4a0, type: 3}
+--- !u!1 &373281767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+  m_PrefabInstance: {fileID: 776475201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &373281769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373281767}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &375085600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
@@ -2546,6 +3073,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1685396459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &384181615 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1120824680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &384181617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384181615}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &385757654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2600,6 +3145,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -2682,9 +3231,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 396539358}
+  - component: {fileID: 396539359}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2707,6 +3257,19 @@ Transform:
   m_Father: {fileID: 199518974}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &396539359
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396539357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &399203765
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2761,6 +3324,10 @@ PrefabInstance:
     - target: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
@@ -2881,6 +3448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &410816475 stripped
@@ -2942,6 +3513,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -3021,6 +3596,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 585255662}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &425922444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 880804524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &425922446
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425922444}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &436571959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3075,6 +3668,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlockLong (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -3285,8 +3882,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &457206411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1803644338}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &457206413
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457206411}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &457880318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1452487574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &457880320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457880318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &457908262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1451627036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &457908264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457908262}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &464452181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -3350,6 +4005,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlockLong
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -3458,6 +4117,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 814293419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &500177564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+  m_PrefabInstance: {fileID: 1098906913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &500177566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500177564}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &503127001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -3473,6 +4150,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -3530,6 +4211,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -3909,6 +4594,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82f54e544a7fa1429944c6a878de4a0, type: 3}
+--- !u!1 &546378629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1036762562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &546378631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546378629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &552100937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3919,6 +4622,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -3966,6 +4673,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &555511039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 685367774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &555511041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555511039}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &557044581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5392891721278476445, guid: f5d84230dcd06e04cb5fd5f765b7d545, type: 3}
@@ -4070,6 +4795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &585255662
@@ -4082,6 +4811,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -4184,8 +4917,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &588478868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 585287226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &588478870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588478868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &593287274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4196,6 +4951,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -4243,6 +5002,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &606104161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6122619256676526932, guid: b35087f7d8ebbcc4aaaf496ae7503080, type: 3}
+  m_PrefabInstance: {fileID: 1720911973049787400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &606104162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606104161}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &606414049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1714719127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &606414051
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606414049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &608263932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 552100937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &608263934
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608263932}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &608706721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
@@ -4305,6 +5118,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86a60574b8bb0b94ab517c17e682931e, type: 3}
+--- !u!1 &615100954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1446019145}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &615100956
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615100954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &616230431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1289142135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &616230433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616230431}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &624647880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
@@ -4320,6 +5169,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -4378,6 +5231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock4 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
       value: 62
@@ -4435,6 +5292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock4 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
       value: 63
@@ -4486,6 +5347,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 238816626}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &642266108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+  m_PrefabInstance: {fileID: 399203765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &642266110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642266108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &647433694
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,6 +5400,24 @@ Transform:
   m_Father: {fileID: 975002550}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &661691584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1050325599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &661691586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661691584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &665130289 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -4599,6 +5496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock4 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -4645,6 +5546,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &691813384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1167455546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &691813386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691813384}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &695403413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4799758898978429193, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
@@ -4705,6 +5624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &701756344 stripped
@@ -4722,9 +5645,10 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
-  m_TagString: Untagged
+  m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4805,6 +5729,19 @@ Transform:
   m_Father: {fileID: 199518974}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!65 &705507996
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &707567704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -5022,6 +5959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &728699809 stripped
@@ -5089,8 +6030,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &746691188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 902473911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &746691190
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746691188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &755176311 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -5153,11 +6116,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &763826188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1016767937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &763826190
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763826188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &764825575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1120824680}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &767508369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 585255662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &767508371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767508369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &771850323 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -5275,6 +6274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock5 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
 --- !u!1001 &777409012
@@ -5332,6 +6335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &778666272
@@ -5388,6 +6395,10 @@ PrefabInstance:
     - target: {fileID: 3027864226993646580, guid: e00f5fdbe1d4cfa45aacc06396df8465, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027864226993646580, guid: e00f5fdbe1d4cfa45aacc06396df8465, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00f5fdbe1d4cfa45aacc06396df8465, type: 3}
@@ -5487,11 +6498,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779759490}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &780716889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1769762805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &780716891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780716889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &800877115 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 639124129}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &806217198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 446764116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &806217200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806217198}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &814293419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5547,8 +6594,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &815047541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1866347395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &815047543
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815047541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &815606544
 GameObject:
   m_ObjectHideFlags: 0
@@ -5649,6 +6718,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7788095574843594435, guid: b35087f7d8ebbcc4aaaf496ae7503080, type: 3}
   m_PrefabInstance: {fileID: 1720911973049787400}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &823063486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 464482892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &823063488
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823063486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &832979779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5704,8 +6791,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &833052266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1347226199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &833052268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833052266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &841751952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5763,6 +6872,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &857343547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1452876637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &857343549
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857343547}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &857343582 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -5773,6 +6900,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 881716774}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &872663948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1345652028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &872663950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872663948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &880804524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5783,6 +6928,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -5885,6 +7034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
 --- !u!1001 &881716774
@@ -5897,6 +7050,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -5999,6 +7156,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &892555701 stripped
@@ -6061,13 +7222,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &912358825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1267420622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &912358827
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912358825}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &916260335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 1835477617}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &919468007 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+  m_PrefabInstance: {fileID: 1314903368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &919468009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919468007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &923222871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6123,6 +7324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &926038964 stripped
@@ -6135,6 +7340,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4495462812921295874, guid: b82f54e544a7fa1429944c6a878de4a0, type: 3}
   m_PrefabInstance: {fileID: 538917786}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &926946787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1772820136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &926946789
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926946787}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &930586539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6387,6 +7610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &946351555
@@ -6444,6 +7671,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &950617260
@@ -6456,6 +7687,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -6503,6 +7738,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &953391954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 504549243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &953391956
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953391954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &960850073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 409980400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &960850075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960850073}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &968713017
 GameObject:
   m_ObjectHideFlags: 0
@@ -6653,6 +7924,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1 &975002549
@@ -6704,6 +7979,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1036762562}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &985493878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+  m_PrefabInstance: {fileID: 1983152389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &985493880
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985493878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &989628106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 385757654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &989628108
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989628106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &990196706 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -6750,6 +8061,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1920764710}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1000937748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1281493860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1000937750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000937748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1003455003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6760,6 +8089,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -6862,6 +8195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1016767937
@@ -6918,6 +8255,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -6978,6 +8319,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86a60574b8bb0b94ab517c17e682931e, type: 3}
+--- !u!1 &1029446097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1207427900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1029446099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029446097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1036762562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7032,6 +8391,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -7151,6 +8514,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlockLong (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -7275,8 +8642,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1085184743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1074221355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1085184745
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085184743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1086093694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7389,6 +8778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock5 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
 --- !u!4 &1099704259 stripped
@@ -7406,6 +8799,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -7508,6 +8905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1114117995
@@ -7564,6 +8965,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -7683,8 +9088,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1118374891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+  m_PrefabInstance: {fileID: 881169935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1118374893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118374891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1120824680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7739,6 +9166,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -7837,6 +9268,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121067523}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1125738367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 632346873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1125738369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125738367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1126538269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7894,6 +9343,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1126862891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 259407673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1126862893
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126862891}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1128118928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -7953,6 +9420,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlockLong (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -8028,6 +9499,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1010617346}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1146117083 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1225541149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1146117085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146117083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1148813350 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4495462812921295874, guid: b82f54e544a7fa1429944c6a878de4a0, type: 3}
@@ -8088,6 +9577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1167188585
@@ -8100,6 +9593,10 @@ PrefabInstance:
     - target: {fileID: 6122619256676526932, guid: b35087f7d8ebbcc4aaaf496ae7503080, type: 3}
       propertyPath: m_Name
       value: Stand (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122619256676526932, guid: b35087f7d8ebbcc4aaaf496ae7503080, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 7788095574843594435, guid: b35087f7d8ebbcc4aaaf496ae7503080, type: 3}
       propertyPath: m_RootOrder
@@ -8158,6 +9655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock4 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -8214,6 +9715,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -8308,11 +9813,47 @@ Transform:
   m_Father: {fileID: 975002550}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1189647845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 436571959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1189647847
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189647845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1193620785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3027864226993646579, guid: e00f5fdbe1d4cfa45aacc06396df8465, type: 3}
   m_PrefabInstance: {fileID: 778666272}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1199718293 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1832206127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1199718295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199718293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1203312844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8323,6 +9864,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -8425,6 +9970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1207427900
@@ -8482,8 +10031,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1208891560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1578688011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1208891562
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208891560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1209759680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
@@ -8494,6 +10065,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 385757654}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1215095921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 881716774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1215095923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215095921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1221795867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
@@ -8625,6 +10214,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+--- !u!1 &1225323850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1247859061}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1225323852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225323850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1225541149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8679,6 +10286,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlockLong (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -8866,6 +10477,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82f54e544a7fa1429944c6a878de4a0, type: 3}
+--- !u!1 &1232787279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6122619256676526932, guid: b35087f7d8ebbcc4aaaf496ae7503080, type: 3}
+  m_PrefabInstance: {fileID: 1167188585}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1232787280
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232787279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1242340386 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -8925,6 +10554,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -8993,8 +10626,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1273373291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1351488799}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1273373293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273373291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1279316874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3027864226993646580, guid: e00f5fdbe1d4cfa45aacc06396df8465, type: 3}
@@ -9014,6 +10669,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breakForce: 15
   destroyOnBreak: 0
+--- !u!65 &1279316877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279316874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1279466008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9125,6 +10793,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -9240,6 +10912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &1296482113 stripped
@@ -9247,6 +10923,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1418601607}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1296769079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+  m_PrefabInstance: {fileID: 1928347121}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1296769081
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296769079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1303164317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9301,6 +10995,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlockLong (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -9359,6 +11057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock5 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
 --- !u!4 &1315676808 stripped
@@ -9376,6 +11078,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1569605303}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1334653247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 47425889}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1334653249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334653247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1337516686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 946351555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1337516688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337516686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1341572736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 225034767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1341572738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341572736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1345135026
 GameObject:
   m_ObjectHideFlags: 0
@@ -9388,6 +11144,7 @@ GameObject:
   - component: {fileID: 1345135028}
   - component: {fileID: 1345135030}
   - component: {fileID: 1345135029}
+  - component: {fileID: 1345135031}
   m_Layer: 0
   m_Name: DebugCannon
   m_TagString: Untagged
@@ -9424,6 +11181,8 @@ MonoBehaviour:
   source: {fileID: 36341389}
   projectile: {fileID: 2338648607421443694, guid: f0e919ed7774c7342acbea46a8966417, type: 3}
   fire: 0
+  audioSource: {fileID: 36341393}
+  volume: 0.5
 --- !u!33 &1345135029
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9473,6 +11232,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1345135031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345135026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000005, y: 1, z: 1.0000005}
+  m_Center: {x: 0.0000076293945, y: 0, z: 0.0000019073486}
 --- !u!1001 &1345652028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9532,6 +11304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1347226199
@@ -9589,8 +11365,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1348081345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1469564714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1348081347
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348081345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1351488799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9601,6 +11399,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -9715,11 +11517,47 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1347226199}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1380762420 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1159680760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1380762422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380762420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1392594928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1758696007612969450, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
   m_PrefabInstance: {fileID: 1513729424}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1398261916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1627456015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1398261918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398261916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1401733162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -9774,6 +11612,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 510608627}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1411634648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 342316990}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1411634650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411634648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1415659547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 92477217}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1415659549
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415659547}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1418601607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9828,6 +11702,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -9893,6 +11771,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82f54e544a7fa1429944c6a878de4a0, type: 3}
+--- !u!1 &1439944854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1733823892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1439944856
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439944854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1446019145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9903,6 +11799,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -9960,6 +11860,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -10062,6 +11966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1452876637
@@ -10123,8 +12031,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1456682563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1929091739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1456682565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456682563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1464736952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -10195,6 +12125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &1469683887 stripped
@@ -10212,6 +12146,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -10321,6 +12259,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 1203312844}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1494148924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 923222871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1494148926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494148924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1511063858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -10381,8 +12337,48 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+--- !u!1 &1520884860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1003455003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1520884862
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520884860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1523575756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1669184941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1523575758
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523575756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1527227021
 GameObject:
   m_ObjectHideFlags: 0
@@ -10478,6 +12474,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527227021}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1532975754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1909763644}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1532975756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532975754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1534784258
 GameObject:
   m_ObjectHideFlags: 0
@@ -10746,6 +12760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &1540552092 stripped
@@ -10823,6 +12841,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b82f54e544a7fa1429944c6a878de4a0, type: 3}
+--- !u!1 &1553430405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 639124129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1553430407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553430405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1553523964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10880,6 +12916,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &1555234461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 777409012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1555234463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555234461}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1557553023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10996,6 +13050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1575005744
@@ -11110,8 +13168,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1583987578 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1831663459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1583987580
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583987578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1584090510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11327,6 +13407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -11373,6 +13457,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &1628541237 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1131930389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1628541239
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628541237}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1630280868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
@@ -11383,6 +13485,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 1446019145}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1635461988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1205289429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1635461990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635461988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1637194611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11393,6 +13513,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -11440,6 +13564,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &1650072320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+  m_PrefabInstance: {fileID: 1631454543443836581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1650072322
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650072320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1654636298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11495,8 +13637,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3027864226993646580, guid: e00f5fdbe1d4cfa45aacc06396df8465, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e00f5fdbe1d4cfa45aacc06396df8465, type: 3}
+--- !u!1 &1663276186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1418601607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1663276188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663276186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1668078170
 GameObject:
   m_ObjectHideFlags: 0
@@ -11587,8 +13751,48 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1671701524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1475965775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1671701526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671701524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1674493037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1303164317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1674493039
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674493037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1677451334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3027864226993646579, guid: e00f5fdbe1d4cfa45aacc06396df8465, type: 3}
@@ -11654,6 +13858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1687271199
@@ -11666,6 +13874,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -11713,11 +13925,101 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &1690638899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1973935163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1690638901
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690638899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1697406640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 887434313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1697406642
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697406640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1699841344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1159680760}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1707951132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 699461150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1707951134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707951132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1709878275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1920764710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1709878277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709878275}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1710362602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 633349176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1710362604
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710362602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1712189760
 GameObject:
   m_ObjectHideFlags: 0
@@ -11749,6 +14051,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1713559149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1637194611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1713559151
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713559149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1714719127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11804,6 +14124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &1719294505 stripped
@@ -11826,6 +14150,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -11990,6 +14318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1763173135
@@ -12112,6 +14444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1772820136
@@ -12173,8 +14509,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1775802867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1909018319}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1775802869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775802867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1778895689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -12240,8 +14598,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1817564921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 510608627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1817564923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817564921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1818096523 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b03391b8e0bf73d40a442420e75f2b6e, type: 3}
@@ -12257,6 +14637,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 225034767}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1823235281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 140161351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1823235283
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823235281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1826883286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12378,6 +14776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1832206127
@@ -12435,6 +14837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlockLong (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1835477617
@@ -12447,6 +14853,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -12504,6 +14914,42 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4495462812921295874, guid: b82f54e544a7fa1429944c6a878de4a0, type: 3}
   m_PrefabInstance: {fileID: 372337345}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1841180512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1117158498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1841180514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841180512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1864524479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 2110672824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1864524481
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864524479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1866347395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12514,6 +14960,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -12561,6 +15011,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &1872500324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1538470905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1872500326
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872500324}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1873650489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12628,6 +15096,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
   m_PrefabInstance: {fileID: 593287274}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1891918049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 1103572184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1891918051
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891918049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1901141440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -12698,6 +15184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!1001 &1909763644
@@ -12710,6 +15200,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -12767,6 +15261,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1720911973101216285}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1919932489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 744983562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1919932491
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919932489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1920764710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12826,8 +15338,48 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+--- !u!1 &1923633470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 32585199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1923633472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923633470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1925383242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 2001821752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1925383244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925383242}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1928347121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12882,6 +15434,10 @@ PrefabInstance:
     - target: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
@@ -12940,6 +15496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock8 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
 --- !u!4 &1934829528 stripped
@@ -12947,6 +15507,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
   m_PrefabInstance: {fileID: 1345652028}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1957971910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+  m_PrefabInstance: {fileID: 1513729424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1957971912
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957971910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1959926412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -13021,6 +15599,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7e7d7f80ba7c0348b75d6103b836906, type: 3}
+--- !u!1 &1972371791 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3027864226993646580, guid: e00f5fdbe1d4cfa45aacc06396df8465, type: 3}
+  m_PrefabInstance: {fileID: 778666272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1972371793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972371791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1973935163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13075,6 +15671,10 @@ PrefabInstance:
     - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock8 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -13231,6 +15831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock5 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
 --- !u!4 &1984440878 stripped
@@ -13272,6 +15876,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1987030758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1743327574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1987030760
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987030758}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1991834261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4799758898978429198, guid: 9b8b8b78985642f42acdc1ee6bd49790, type: 3}
+  m_PrefabInstance: {fileID: 51606342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1991834263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991834261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1994404316 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 1569605303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1994404318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994404316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2001525308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7337806149625129818, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
@@ -13287,6 +15945,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -13391,6 +16053,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &2009217689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+  m_PrefabInstance: {fileID: 950617260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2009217691
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009217689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2015334188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5392891721278476445, guid: f5d84230dcd06e04cb5fd5f765b7d545, type: 3}
@@ -13774,8 +16454,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakableWoodBlock5 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+--- !u!1 &2092828129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 814293419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2092828131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092828129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2110672824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13786,6 +16488,10 @@ PrefabInstance:
     - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9108414270486627665, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     - target: {fileID: 9108414270486627670, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
       propertyPath: m_RootOrder
@@ -13833,6 +16539,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b6bb8a75985c524fa2cf32963941a0c, type: 3}
+--- !u!1 &2114551263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337806149625129821, guid: bf844ec7c777dde4f9509e4e3d0ffdc9, type: 3}
+  m_PrefabInstance: {fileID: 118743752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2114551265
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114551263}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &2123973333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1758696007612969450, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
@@ -13942,6 +16666,10 @@ PrefabInstance:
     - target: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
       propertyPath: m_Name
       value: BreakableWoodBlock5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758696007612969453, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
+      propertyPath: m_TagString
+      value: Structure
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3329a5cbb501a554e807781653789f8e, type: 3}
@@ -14306,6 +17034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stand
       objectReference: {fileID: 0}
+    - target: {fileID: 6122619256676526932, guid: b35087f7d8ebbcc4aaaf496ae7503080, type: 3}
+      propertyPath: m_TagString
+      value: Structure
+      objectReference: {fileID: 0}
     - target: {fileID: 7788095574843594435, guid: b35087f7d8ebbcc4aaaf496ae7503080, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -14640,13 +17372,27 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3027864227192179422}
+  - component: {fileID: 3027864227192179418}
   m_Layer: 0
   m_Name: BreakableWoodBlock
-  m_TagString: Untagged
+  m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &3027864227192179418
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3027864227192179417}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &3027864227192179422
 Transform:
   m_ObjectHideFlags: 0
@@ -14843,13 +17589,27 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7788095576211080198}
+  - component: {fileID: 6122619256097601938}
   m_Layer: 0
   m_Name: Stand (1)
-  m_TagString: Untagged
+  m_TagString: Structure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &6122619256097601938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6122619256097601937}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &7788095576211080198
 Transform:
   m_ObjectHideFlags: 0
