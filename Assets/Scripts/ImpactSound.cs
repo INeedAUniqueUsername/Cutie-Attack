@@ -20,7 +20,8 @@ public class ImpactSound : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Structure"))
+        Debug.Log(other.gameObject.name);
+        if (other.gameObject.name.Contains("Wood"))
         {
             woodImpact.PlayOneShot(woodImpact.clip, volume);
         }
