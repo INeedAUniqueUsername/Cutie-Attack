@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WoodBreak : MonoBehaviour
 {
+    public bool destroyOnBreak;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +16,12 @@ public class WoodBreak : MonoBehaviour
         
     }
     public void OnJointBreak(float breakForce) {
-        var joints = gameObject.GetComponents<FixedJoint>();
-        if (joints.Length == 1) {
-            gameObject.SetActive(false);
+        if (destroyOnBreak) {
+            var joints = gameObject.GetComponents<FixedJoint>();
+            if (joints.Length == 1) {
+                gameObject.SetActive(false);
+            }
         }
+        transform.parent.GetComponent<Structure>().OnDamage();
     }
 }
