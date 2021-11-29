@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Missile.cs" />
     <Compile Include="Assets\Scripts\DebugCannon.cs" />
+    <Compile Include="Assets\Scripts\DisableChildRigidBody.cs" />
     <Compile Include="Assets\Scripts\WoodBreak.cs" />
     <Compile Include="Assets\Scripts\Structure.cs" />
     <Compile Include="Assets\Transparent.cs" />
@@ -62,7 +63,7 @@
     <Compile Include="Assets\Game.cs" />
     <Compile Include="Assets\Scripts\ImpactSound.cs" />
     <Compile Include="Assets\Scripts\TouchController.cs" />
-    <Compile Include="Assets\Scripts\DisableChildRigidBody.cs" />
+    <Compile Include="Assets\Scripts\BounceStage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
