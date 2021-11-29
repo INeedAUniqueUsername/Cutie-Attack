@@ -24,19 +24,40 @@ public class Grab : MonoBehaviour {
 	private GameObject sling;
 	private LineRenderer slingBand;
 
+	public bool phasing = false;
+
+	public Material solid;
+	public Material holding;
+	public Material ghost;
+
+	public Grab() {}
+
 	void GrabObject(){
 		Collider[] hits;
 		hits = Physics.OverlapSphere(transform.position, grabRadius, grabMask);
 		if (hits.Length == 0){
 			return;
 		}
-		Collider closest = hits[0];
+
+		Collider closest = null;
 		foreach (Collider h in hits) {
+			if (h.isTrigger || h.attachedRigidbody == null || h.gameObject.name.Contains("Crosshair")) {
+				continue;
+			}
+			Debug.Log(h.gameObject.name);
 			if (Vector3.Distance(h.transform.position, transform.position) < Vector3.Distance(closest.transform.position, transform.position)) {
 				closest = h;
 			}
 		}
 
+		if(closest == null) {
+			return;
+		}
+		Debug.Log(closest.gameObject.name);
+
+		foreach (Transform c in gameObject.transform) {
+			c.gameObject.GetComponent<Renderer>().material = holding;
+		}
 		grabbing = true;
 		//grabbedObject = hits[closestHit].transform.gameObject;
 		grabbedObject = closest.attachedRigidbody.gameObject;
@@ -44,15 +65,18 @@ public class Grab : MonoBehaviour {
 		grabbedObject.GetComponent<Rigidbody>().isKinematic = true;
 		grabbedObject.transform.position = transform.position;
 		grabbedObject.transform.parent = transform;
-
 	}
-
 	void DropObject(){
 
 		grabbing = false;
 
 		if (grabbedObject == null){
 			return;
+		}
+
+
+		foreach (Transform c in gameObject.transform) {
+			c.gameObject.GetComponent<Renderer>().material = solid;
 		}
 
 		grabbedObject.transform.parent = null;
@@ -64,14 +88,12 @@ public class Grab : MonoBehaviour {
 			vel = Vector3.Normalize(vel) * Mathf.Pow(Vector3.Magnitude(vel), 1.3f);
 			sling = null;
 		}
-		
 
 		grabbedObject.GetComponent<Rigidbody>().velocity = vel;
 		grabbedObject.GetComponent<Rigidbody>().angularVelocity = GetAngularVelocity();
 
 		var missile = grabbedObject.GetComponent<Missile>();// ?? grabbedObject.transform.parent.GetComponent<Missile>();
 		if (missile != null) { missile.flying = true; }
-
 		grabbedObject = null;
 	}
 	void FindSling() {
@@ -86,6 +108,24 @@ public class Grab : MonoBehaviour {
 	Vector3 GetAngularVelocity(){
 		Quaternion deltaRotation = currentRotation * Quaternion.Inverse(lastRotation);
 		return new Vector3(Mathf.DeltaAngle(0, deltaRotation.eulerAngles.x), Mathf.DeltaAngle(0, deltaRotation.eulerAngles.y), Mathf.DeltaAngle(0, deltaRotation.eulerAngles.z));
+	}
+
+	public void StartPhase() {
+		phasing = true;
+		if(grabbing) {
+			DropObject();
+		}
+
+		foreach (Transform c in gameObject.transform) {
+			c.gameObject.GetComponent<Renderer>().material = ghost;
+		}
+	}
+	public void StopPhase() {
+		phasing = false;
+
+		foreach(Transform c in gameObject.transform) {
+			c.gameObject.GetComponent<Renderer>().material = solid;
+		}
 	}
 
 	void Update () {
@@ -104,7 +144,12 @@ public class Grab : MonoBehaviour {
 			}
 		}
 		OVRInput.Update();
-		if(!grabbing && OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller) >= THRESH_GRAB) GrabObject();
-        if(grabbing && OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller) <= THRESH_DROP) DropObject();
+		if (phasing) {
+			if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, controller) <= THRESH_DROP) StopPhase();
+		} else {
+			if (!grabbing && OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller) >= THRESH_GRAB) GrabObject();
+			if (grabbing && OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, controller) <= THRESH_DROP) DropObject();
+			if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, controller) >= THRESH_GRAB) StartPhase();
+		}
 	}
 }

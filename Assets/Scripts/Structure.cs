@@ -27,8 +27,6 @@ public class Structure : MonoBehaviour {
                 
                 
                 Transform other = transform.GetChild(j);
-
-                
                 var joint = c.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
                 joint.connectedBody = other.gameObject.GetComponent<Rigidbody>();
                 joint.breakForce = breakForce;
