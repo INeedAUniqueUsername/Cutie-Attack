@@ -36,28 +36,26 @@ public class Grab : MonoBehaviour {
 		Collider[] hits;
 		hits = Physics.OverlapSphere(transform.position, grabRadius, grabMask);
 		if (hits.Length == 0){
+			//Debug.Log("No hits");
 			return;
 		}
 
 		Collider closest = null;
 		foreach (Collider h in hits) {
 			if (h.isTrigger || h.attachedRigidbody == null || h.gameObject.name.Contains("Crosshair")) {
+				//Debug.Log("Skip trigger");
 				continue;
 			}
-			Debug.Log(h.gameObject.name);
-			if (Vector3.Distance(h.transform.position, transform.position) < Vector3.Distance(closest.transform.position, transform.position)) {
+			//Debug.Log("Hit: " + h.gameObject.name);
+			if (closest == null || Vector3.Distance(h.transform.position, transform.position) < Vector3.Distance(closest.transform.position, transform.position)) {
 				closest = h;
 			}
 		}
-
 		if(closest == null) {
 			return;
 		}
-		Debug.Log(closest.gameObject.name);
+		//Debug.Log("Closest: " + closest.gameObject.name);
 
-		foreach (Transform c in gameObject.transform) {
-			c.gameObject.GetComponent<Renderer>().material = holding;
-		}
 		grabbing = true;
 		//grabbedObject = hits[closestHit].transform.gameObject;
 		grabbedObject = closest.attachedRigidbody.gameObject;
@@ -65,6 +63,10 @@ public class Grab : MonoBehaviour {
 		grabbedObject.GetComponent<Rigidbody>().isKinematic = true;
 		grabbedObject.transform.position = transform.position;
 		grabbedObject.transform.parent = transform;
+
+		foreach (Transform c in gameObject.transform) {
+			c.gameObject.GetComponent<Renderer>().material = holding;
+		}
 	}
 	void DropObject(){
 
@@ -72,11 +74,6 @@ public class Grab : MonoBehaviour {
 
 		if (grabbedObject == null){
 			return;
-		}
-
-
-		foreach (Transform c in gameObject.transform) {
-			c.gameObject.GetComponent<Renderer>().material = solid;
 		}
 
 		grabbedObject.transform.parent = null;
@@ -95,10 +92,14 @@ public class Grab : MonoBehaviour {
 		var missile = grabbedObject.GetComponent<Missile>();// ?? grabbedObject.transform.parent.GetComponent<Missile>();
 		if (missile != null) { missile.flying = true; }
 		grabbedObject = null;
+
+		foreach (Transform c in gameObject.transform) {
+			c.gameObject.GetComponent<Renderer>().material = solid;
+		}
 	}
 	void FindSling() {
 
-		Debug.Log("FindSling");
+		//Debug.Log("FindSling");
 
 		if(Vector3.Magnitude(grabbedObject.transform.position - slingOrigin.transform.position) < 5) {
 			sling = slingOrigin;

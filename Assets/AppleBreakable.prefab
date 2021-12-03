@@ -395,6 +395,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakForce: 5
+  destroyOnBreak: 0
+  intact: 1
+  score: 100
+  apple: 0
 --- !u!1 &4179609675631105854
 GameObject:
   m_ObjectHideFlags: 0

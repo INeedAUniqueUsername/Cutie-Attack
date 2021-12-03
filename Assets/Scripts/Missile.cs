@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Missile : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class Missile : MonoBehaviour
     {
         
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.name.Contains("Apple") || other.gameObject.transform.parent.name.Contains("Apple")) {
+        if (other.gameObject.name.Contains("Apple") || other.gameObject.transform.parent?.name.Contains("Apple") == true) {
 			if (flying) {
                 game.points += 5000;
             }
@@ -37,6 +37,18 @@ public class Missile : MonoBehaviour
                 game.points += 1000;
             }
         }
+
+        if(other.gameObject.name.Equals("ExitTrigger")) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
         flying = false;
+    }
+
+    private void OnTriggerEnter(Collider other) {
+
+        Debug.Log(other.gameObject.name);
+        if (other.gameObject.name.Equals("ExitTrigger")) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

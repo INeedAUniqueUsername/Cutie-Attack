@@ -13,9 +13,6 @@ public class Structure : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
 
-        if (apple) {
-            GameObject.FindWithTag("Game").GetComponent<Game>().apples++;
-        }
         var count = transform.childCount;
         for(int i = 0; i < count; i++) {
             Transform c = transform.GetChild(i);
@@ -24,8 +21,6 @@ public class Structure : MonoBehaviour {
                 if(i == j) {
                     continue;
                 }
-                
-                
                 Transform other = transform.GetChild(j);
                 var joint = c.gameObject.AddComponent(typeof(FixedJoint)) as FixedJoint;
                 joint.connectedBody = other.gameObject.GetComponent<Rigidbody>();
@@ -33,6 +28,9 @@ public class Structure : MonoBehaviour {
             }
             c.gameObject.AddComponent(typeof(WoodBreak));
             c.gameObject.GetComponent<WoodBreak>().destroyOnBreak = destroyOnBreak;
+        }
+        if (apple) {
+            GameObject.FindWithTag("Game").GetComponent<Game>().apples++;
         }
     }
     public void OnDamage() {
