@@ -398,7 +398,7 @@ MonoBehaviour:
   destroyOnBreak: 0
   intact: 1
   score: 100
-  apple: 0
+  apple: 1
 --- !u!1 &4179609675631105854
 GameObject:
   m_ObjectHideFlags: 0
