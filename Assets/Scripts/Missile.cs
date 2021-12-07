@@ -39,7 +39,7 @@ public class Missile : MonoBehaviour
         }
 
         if(other.gameObject.name.Equals("ExitTrigger")) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("MainHub", LoadSceneMode.Single);
         }
         flying = false;
     }
@@ -48,7 +48,7 @@ public class Missile : MonoBehaviour
 
         Debug.Log(other.gameObject.name);
         if (other.gameObject.name.Equals("ExitTrigger")) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("MainHub", LoadSceneMode.Single);
         }
     }
 }

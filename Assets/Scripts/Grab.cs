@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 
-public class Grab : MonoBehaviour {
+public class Grab : MonoBehaviour
+{
 
 
 	public OVRInput.Controller controller;
 
-    public const float THRESH_GRAB = 0.55f;
-    public const float THRESH_DROP = 0.35f;
+	public const float THRESH_GRAB = 0.55f;
+	public const float THRESH_DROP = 0.35f;
 
 	private bool grabbing;
 	private bool reaching;
@@ -30,12 +31,12 @@ public class Grab : MonoBehaviour {
 	public Material holding;
 	public Material ghost;
 
-	public Grab() {}
+	public Grab() { }
 
-	void GrabObject(){
+	void GrabObject() {
 		Collider[] hits;
 		hits = Physics.OverlapSphere(transform.position, grabRadius, grabMask);
-		if (hits.Length == 0){
+		if (hits.Length == 0) {
 			//Debug.Log("No hits");
 			return;
 		}
@@ -51,7 +52,7 @@ public class Grab : MonoBehaviour {
 				closest = h;
 			}
 		}
-		if(closest == null) {
+		if (closest == null) {
 			return;
 		}
 		//Debug.Log("Closest: " + closest.gameObject.name);
@@ -68,11 +69,11 @@ public class Grab : MonoBehaviour {
 			c.gameObject.GetComponent<Renderer>().material = holding;
 		}
 	}
-	void DropObject(){
+	void DropObject() {
 
 		grabbing = false;
 
-		if (grabbedObject == null){
+		if (grabbedObject == null) {
 			return;
 		}
 
@@ -80,7 +81,7 @@ public class Grab : MonoBehaviour {
 		grabbedObject.GetComponent<Rigidbody>().isKinematic = false;
 
 		Vector3 vel = new Vector3(0, 0, 0);
-		if(sling != null) {
+		if (sling != null) {
 			vel = (sling.transform.position - grabbedObject.transform.position);
 			vel = Vector3.Normalize(vel) * Mathf.Pow(Vector3.Magnitude(vel), 1.3f);
 			sling = null;
@@ -101,19 +102,19 @@ public class Grab : MonoBehaviour {
 
 		//Debug.Log("FindSling");
 
-		if(Vector3.Magnitude(grabbedObject.transform.position - slingOrigin.transform.position) < 5) {
+		if (Vector3.Magnitude(grabbedObject.transform.position - slingOrigin.transform.position) < 5) {
 			sling = slingOrigin;
 			slingBand = sling.GetComponent<LineRenderer>();
 		}
 	}
-	Vector3 GetAngularVelocity(){
+	Vector3 GetAngularVelocity() {
 		Quaternion deltaRotation = currentRotation * Quaternion.Inverse(lastRotation);
 		return new Vector3(Mathf.DeltaAngle(0, deltaRotation.eulerAngles.x), Mathf.DeltaAngle(0, deltaRotation.eulerAngles.y), Mathf.DeltaAngle(0, deltaRotation.eulerAngles.z));
 	}
 
 	public void StartPhase() {
 		phasing = true;
-		if(grabbing) {
+		if (grabbing) {
 			DropObject();
 		}
 
@@ -124,18 +125,18 @@ public class Grab : MonoBehaviour {
 	public void StopPhase() {
 		phasing = false;
 
-		foreach(Transform c in gameObject.transform) {
+		foreach (Transform c in gameObject.transform) {
 			c.gameObject.GetComponent<Renderer>().material = solid;
 		}
 	}
 
-	void Update () {
-		if (grabbedObject != null){
+	void Update() {
+		if (grabbedObject != null) {
 			lastRotation = currentRotation;
 			currentRotation = grabbedObject.transform.rotation;
 
-			if(sling != null) {
-				
+			if (sling != null) {
+
 				var v = (grabbedObject.transform.position - sling.transform.position);
 				v = new Vector3(-v.x, v.y, -v.z);
 				slingBand.SetPosition(1, v + new Vector3(0, 0, -1));
