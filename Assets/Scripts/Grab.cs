@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 
-public class Grab : MonoBehaviour
-{
-
-
+public class Grab : MonoBehaviour {
 	public OVRInput.Controller controller;
 
 	public const float THRESH_GRAB = 0.55f;
