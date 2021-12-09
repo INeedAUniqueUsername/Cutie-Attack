@@ -41,9 +41,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &1842931902246193492
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -85,9 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &1742948518805882438
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,9 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &3694432602479376885
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -173,9 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &2710566159270734875
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -217,9 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &3359783958793834357
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -261,9 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &4482574739208303928
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -305,9 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &6809052673627859990
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -349,9 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &6569323887498081700
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -393,9 +377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &7688972395548527471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -437,9 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &3365594436421739460
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -481,9 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &9015379212079729759
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -525,9 +503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &7497063530521339988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -569,9 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &9108414271035462436
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -613,9 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &9108414271004958772
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -657,9 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!54 &6883059364354286150
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -701,9 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b027b225f34d464ba2310c578b9775f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solid: {fileID: 2100000, guid: 5e5d41c993df4fe4bb39feebacabd032, type: 2}
   ghost: {fileID: 2100000, guid: fc1e7aa617890674cb0cfa650caa6222, type: 2}
-  phasing: 0
 --- !u!1 &9108414270486627665
 GameObject:
   m_ObjectHideFlags: 0
