@@ -167,9 +167,6 @@ public class OVROverlay : MonoBehaviour
 	[Tooltip("When checked, the texture is treated as if the alpha was already premultiplied")]
 	public bool isAlphaPremultiplied = false;
 
-	[Tooltip("When checked, the layer will use bicubic filtering")]
-	public bool useBicubicFiltering = false;
-
 
 	/// <summary>
 	/// Preview the overlay in the editor using a mesh renderer.
@@ -609,10 +606,6 @@ public class OVROverlay : MonoBehaviour
 			newDesc.LayerFlags |= (int)OVRPlugin.LayerFlags.AndroidSurfaceSwapChain;
 		}
 
-		if (useBicubicFiltering)
-		{
-			newDesc.LayerFlags |= (int)OVRPlugin.LayerFlags.BicubicFiltering;
-		}
 
 		return newDesc;
 	}
@@ -854,7 +847,7 @@ public class OVROverlay : MonoBehaviour
 
 		// Backward compatibility
 		if (rend != null && textures[0] == null)
-			textures[0] = rend.sharedMaterial.mainTexture;
+			textures[0] = rend.material.mainTexture;
 
 		SetupEditorPreview();
 	}

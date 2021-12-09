@@ -35,9 +35,6 @@ public class OVRExternalComposition : OVRComposition
 	public GameObject backgroundCameraGameObject = null;
 	public Camera backgroundCamera = null;
 #if OVR_ANDROID_MRC
-	private bool skipFrame = false;
-	private float fpsThreshold = 80.0f;
-	private bool isFrameSkipped = true;
 	public bool renderCombinedFrame = false;
 	public AudioListener audioListener;
 	public OVRMRAudioFilter audioFilter;
@@ -72,8 +69,6 @@ public class OVRExternalComposition : OVRComposition
 			cameraPoseTimeArray[i] = 0.0;
 		}
 
-		skipFrame = OVRManager.display.displayFrequency > fpsThreshold;
-		OVRManager.DisplayRefreshRateChanged += DisplayRefreshRateChanged;
 		frameIndex = 0;
 		lastMrcEncodeFrameSyncId = -1;
 
@@ -319,13 +314,6 @@ public class OVRExternalComposition : OVRComposition
 
 	public override void Update(GameObject gameObject, Camera mainCamera, OVRMixedRealityCaptureConfiguration configuration, OVRManager.TrackingOrigin trackingOrigin)
 	{
-#if OVR_ANDROID_MRC
-		if (skipFrame && OVRPlugin.Media.IsCastingToRemoteClient()) {
-			isFrameSkipped = !isFrameSkipped;
-			if(isFrameSkipped) { return; }
-		}
-#endif
-
 		RefreshCameraObjects(gameObject, mainCamera, configuration);
 
 		OVRPlugin.SetHandNodePoseStateLatency(0.0);     // the HandNodePoseStateLatency doesn't apply to the external composition. Always enforce it to 0.0
@@ -489,7 +477,6 @@ public class OVRExternalComposition : OVRComposition
 			}
 		}
 
-		OVRManager.DisplayRefreshRateChanged -= DisplayRefreshRateChanged;
 		frameIndex = 0;
 #endif
 	}
@@ -527,14 +514,6 @@ public class OVRExternalComposition : OVRComposition
 			cachedAudioData.Clear();
 		}
 	}
-
-#if OVR_ANDROID_MRC
-
-	private void DisplayRefreshRateChanged(float fromRefreshRate, float toRefreshRate)
-	{
-		skipFrame = toRefreshRate > fpsThreshold;
-	}
-#endif
 
 }
 
