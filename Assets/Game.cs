@@ -70,11 +70,6 @@ public class Game : MonoBehaviour
                 winTimer -= Time.deltaTime;
 			}
         }
-
-        if (OVRInput.Get(OVRInput.RawButton.B))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
-        }
     }
     public void Win() {
         if(restartTimer > 0) {

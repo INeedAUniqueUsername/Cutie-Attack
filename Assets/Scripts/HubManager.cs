@@ -10,7 +10,7 @@ public class HubManager : MonoBehaviour
     // Update is called once per frame
     void Update() {
         if (OVRInput.Get(OVRInput.RawButton.B)) //use the B button in the Occulus Rift for the condition code here
-    {
+{
            #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
            #else
@@ -18,4 +18,5 @@ public class HubManager : MonoBehaviour
            #endif
         }
     }
-}
+
+    }
