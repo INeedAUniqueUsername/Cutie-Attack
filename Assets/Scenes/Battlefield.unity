@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1356,7 +1356,7 @@ Transform:
   m_GameObject: {fileID: 244998572}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 2, z: 20}
+  m_LocalScale: {x: 20, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 1668078171}
   m_RootOrder: 0
@@ -4656,7 +4656,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 940915767}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &940915767
 Transform:
@@ -4669,10 +4669,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 286184860}
   - {fileID: 940915763}
   - {fileID: 940915769}
   m_Father: {fileID: 1986955682}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &940915769
 Transform:
@@ -4687,7 +4688,7 @@ Transform:
   m_Children:
   - {fileID: 940845635}
   m_Father: {fileID: 940915767}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &940915771
 Transform:
@@ -7205,7 +7206,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1986955682}
+    m_TransformParent: {fileID: 940915767}
     m_Modifications:
     - target: {fileID: 242649795340389814, guid: 2122f08d24dc93b4097e8f2665c1e802, type: 3}
       propertyPath: slingOrigin
@@ -7217,7 +7218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 242649795462053091, guid: 2122f08d24dc93b4097e8f2665c1e802, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 242649795462053091, guid: 2122f08d24dc93b4097e8f2665c1e802, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9125,7 +9126,6 @@ Transform:
   m_LocalScale: {x: 80, y: 80, z: 80}
   m_Children:
   - {fileID: 485986720}
-  - {fileID: 286184860}
   - {fileID: 940915767}
   m_Father: {fileID: 0}
   m_RootOrder: 36
