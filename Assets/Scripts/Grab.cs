@@ -21,6 +21,8 @@ public class Grab : MonoBehaviour {
 
 	private GameObject sling;
 	private LineRenderer slingBand;
+	private Vector3 temp1;
+	private Vector3 temp2;
 
 	public bool phasing = false;
 
@@ -30,7 +32,14 @@ public class Grab : MonoBehaviour {
 
 	public Grab() { }
 
-	void GrabObject() {
+    private void Start()
+    {
+		FindSling();
+		temp1 = slingBand.GetPosition(1);
+		temp2 = slingBand.GetPosition(2);
+
+	}
+    void GrabObject() {
 		Collider[] hits;
 		hits = Physics.OverlapSphere(transform.position, grabRadius, grabMask);
 		if (hits.Length == 0) {
@@ -88,12 +97,20 @@ public class Grab : MonoBehaviour {
 		grabbedObject.GetComponent<Rigidbody>().angularVelocity = GetAngularVelocity();
 
 		var missile = grabbedObject.GetComponent<Missile>();// ?? grabbedObject.transform.parent.GetComponent<Missile>();
+		var spread = grabbedObject.GetComponent<SpreadShot>();
 		if (missile != null) { missile.flying = true; }
+		if (spread != null)
+        {
+			spread.fired = true;
+        }
 		grabbedObject = null;
 
 		foreach (Transform c in gameObject.transform) {
 			c.gameObject.GetComponent<Renderer>().material = solid;
 		}
+		slingBand.SetPosition(1, temp1);
+		slingBand.SetPosition(2, temp2);
+
 	}
 	void FindSling() {
 

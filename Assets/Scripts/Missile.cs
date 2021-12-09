@@ -6,14 +6,16 @@ public class Missile : MonoBehaviour
 {
     // Start is called before the first frame update
     private AudioSource woodImpact;
+    private AudioSource metalImpact;
     public float volume = .1f;
     public bool flying = true;
 
-    public Game game;
+    private Game game;
     void Start()
     {
         woodImpact = this.GetComponent<AudioSource>();
         game = GameObject.FindWithTag("Game").GetComponent<Game>();
+        metalImpact = game.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,9 +40,15 @@ public class Missile : MonoBehaviour
             }
         }
 
-        if(other.gameObject.name.Equals("ExitTrigger")) {
-            SceneManager.LoadScene("MainHub", LoadSceneMode.Single);
+        if (other.gameObject.name.Contains("Metal"))
+        {
+            metalImpact.PlayOneShot(metalImpact.clip, volume);
+            if(flying)
+            {
+                game.points += 500;
+            }
         }
+
         flying = false;
     }
 
