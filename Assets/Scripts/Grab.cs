@@ -85,24 +85,24 @@ public class Grab : MonoBehaviour {
 
 		grabbedObject.transform.parent = null;
 		grabbedObject.GetComponent<Rigidbody>().isKinematic = false;
-
+		var spread = grabbedObject.GetComponent<SpreadShot>();
+		
 		Vector3 vel = new Vector3(0, 0, 0);
 		if (sling != null) {
 			vel = (sling.transform.position - grabbedObject.transform.position);
 			vel = Vector3.Normalize(vel) * Mathf.Pow(Vector3.Magnitude(vel), 1.3f);
 			sling = null;
+			if (spread != null)
+        	{
+			spread.fired = true;
+        	}
 		}
 
 		grabbedObject.GetComponent<Rigidbody>().velocity = vel;
 		grabbedObject.GetComponent<Rigidbody>().angularVelocity = GetAngularVelocity();
 
 		var missile = grabbedObject.GetComponent<Missile>();// ?? grabbedObject.transform.parent.GetComponent<Missile>();
-		var spread = grabbedObject.GetComponent<SpreadShot>();
 		if (missile != null) { missile.flying = true; }
-		if (spread != null)
-        {
-			spread.fired = true;
-        }
 		grabbedObject = null;
 
 		foreach (Transform c in gameObject.transform) {

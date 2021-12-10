@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/MainHub.unity
     guid: 8f82ed10af7bd1f40811c32ca9721065
   - enabled: 1
-    path: Assets/Scenes/L1.unity
-    guid: 2aa9db40a1b2bab4db31218831557047
-  - enabled: 1
     path: Assets/Scenes/Armory.unity
     guid: 7c77e0883e6117947a5b2f579d808d44
   - enabled: 1
     path: Assets/Scenes/Palace.unity
     guid: eb04fb6f1b913da4b8641f0a19942403
+  - enabled: 1
+    path: Assets/Scenes/Battlefield.unity
+    guid: 6ae3d985e02c6d7489bc09fd0dceee39
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: fd890a5ec12c3db45b6aef2911b4e410, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7f20cbb705e464d4b8caefacba0b7704, type: 2}
